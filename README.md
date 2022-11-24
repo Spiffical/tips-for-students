@@ -7,7 +7,7 @@
 
 ---
 
-## This is the introduction <a name="introduction"></a>
+## Introduction <a name="introduction"></a>
 This is a repository of all the helpful tools that various students have used to make their lives better. Enjoy!
 
 ---
