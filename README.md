@@ -25,12 +25,28 @@ ssh-keygen
 ```
 then print out the contents of your newly generated public SSH key:
 ```
-cat /path/to/your/public_key.pub
+cat /path/to/your/.ssh/public_key.pub
 ```
 Copy the public key, then head over to your chosen Compute Canada server. Paste your public SSH key into the `authorized_keys` file:
 ```
 nano ~/.ssh/authorized_keys
 ```
+In PyCharm, head to `Tools -> Deployment -> Configuration`, and then follow these steps:
+
+1. Click the `+` button, choose `SFTP` to create a new Secure File Transfer Protocol connection, and give it a name, e.g. `cedar`.
+2. Click the `...` to add a new SSH configuration
+3. In `Host`, type the host information, e.g. `cedar.computecanada.ca`
+4. In `Username`, type your username
+5. In `Authentication type`, choose `Key pair`
+6. In `Private key file`, choose your previously generated private key, e.g. `path/to/your/.ssh/private_key`
+7. Test connection! If everything is fine, hit `Okay`
+8. Set the `Root path` to your Compute Canada server (might be easiest to `Autodetect`)
+9. Head to the `Mappings` tab, and choose a folder on your Compute Canada server to deploy your code to
+10. Finally, click on the SFTP server name you made, and click the checkmark to select it as the default
+
+Now you can deploy your code to Compute Canada by selecting `Tools -> Deployment -> Upload to <name>`
+
+You can also enable auto-deployment everytime you save by selecting `Tools -> Deployment -> Automatic upload`
 
 ---
 
