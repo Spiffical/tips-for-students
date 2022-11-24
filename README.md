@@ -35,6 +35,7 @@ nano ~/.ssh/authorized_keys
 ---
 
 ## Miscellaneous <a name="miscellaneous"></a>
-The second paragraph text
+
+Organize your tabs with [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=en) (if using Chrome)
 
 
